@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang"eng">
+<head>
+<meta charset="UTF-8">
+<title>js_basics5</title>
+   
+
+    <script type="text/javascript">
+        function validation()//validation
+        {
+            if(document.form1.box.checked)
+                {
+                    alert("you checked the box");
+                }
+            else{
+                alert("you not checked the box");
+            }
+        }
+    </script>
+    
+</head>
+    <body>
+        
+        
+        <form name="form1">
+            username:<input type="text" name="uname"/> 
+            <br>
+            username2:<input type="text" name="uname2" value="abcd"/> 
+            <br>
+            password:<input type="password" name="pass"/>
+            <br>
+            <input type="checkbox" name="box"/> You are an ox
+        <br>
+            <input type="submit" value="submit" onclick="validation()"/>
+        </form>
+        <script type="text/javascript">
+        // accessing forms
+          var x=document.form1.length;
+          document.write(x+"<br>");
+        //acceesing form elements
+         var t=document.form1.uname; //bcz not yet taken
+        
+         document.write(t+"<br>");
+        var y=document.form1.uname2.value;
+          document.write(y+"<br>");  
+        </script>
+    
+    </body>
+
+</html>

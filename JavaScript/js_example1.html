@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+<meta charset="UTF-8">
+<title>ex1</title>
+</head>
+<body>
+<script type="text/javascript">
+function calculate()
+{
+ var p=document.getElementbyId("p").value;
+ var t=document.getElementbyId("t").value;
+ var r=document.getElementbyId("r").value;
+ var result=document.getElementbyId("result");
+result.innerHTML="ok";
+}
+
+</script>
+
+ principle amount:<input id="p"><br>
+ time in years:<input id="t"><br>
+ Rate:<input id="r"><br>
+<button onClick="calculate()">calculate</button>
+<p id="result"></p>
+</body>
+</html>

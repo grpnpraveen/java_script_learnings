@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS_Basics2</title>
+    
+<script type="text/javascript">
+    //making custom object using constructor
+    function person(name,age,x)
+    {
+        this.name=name;
+        this.age=age;
+        this.x=x;
+    }
+    var p1=new person("Praveen",19,"pop");    //var is obj of person
+    //making custom object  using obj initialisers
+    obj1={name:"Sanju",age:19};
+    
+    //making methods for object 
+    function p(name,age)
+        {
+            this.name=name;
+            this.age=age;
+            this.years=ut(age);
+        }
+        function ut(age)
+        {
+            var c=65-age;
+            return c;
+        }
+       var u=new p("yoda",5);
+
+</script>
+   
+</head>
+<body>
+    <script type="text/javascript">
+        var y="arey rara";
+        document.write(y.length," is the length of the var y","<br>");//object and its method built in 
+        document.write(p1.name,"'s age is ",p1.age,"<br>"); //custom object
+        document.write(obj1.name,"'s age is ",obj1.age,"<br>"); //custom object
+         document.write(u.name,"'s retirement will be in ",u.years," years");
+
+       
+    </script>
+    //event handling
+<form>
+ <input type="button" value="click me" onclick="alert('clicked click me')";/>   
+</form>
+</body>
+</html>
