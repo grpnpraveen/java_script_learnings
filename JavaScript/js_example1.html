@@ -1,26 +1,21 @@
-<!DOCTYPE html>
-<html lang="eng">
+<html>
 <head>
-<meta charset="UTF-8">
-<title>ex1</title>
+ <script>
+	function calculate()
+	{
+	 var p=document.getElementById("p").value;
+	 var t=document.getElementById("t").value;
+	 var r=document.getElementById("r").value;
+	 var result=document.getElementById("re");
+	 result.innerHTML="The interest amount is "+ (p*t*r/100);
+	}
+
+ </script>
 </head>
 <body>
-<script type="text/javascript">
-function calculate()
-{
- var p=document.getElementbyId("p").value;
- var t=document.getElementbyId("t").value;
- var r=document.getElementbyId("r").value;
- var result=document.getElementbyId("result");
-result.innerHTML="ok";
-}
-
-</script>
-
  principle amount:<input id="p"><br>
- time in years:<input id="t"><br>
+ Number of years:<input id="t"><br>
  Rate:<input id="r"><br>
-<button onClick="calculate()">calculate</button>
-<p id="result"></p>
+<button onclick="calculate()">Calculate</button><br>
+<p id="re"></p>
 </body>
-</html>
